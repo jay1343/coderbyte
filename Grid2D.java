@@ -23,6 +23,6 @@ class Grid2D
     {
         HashMap<String,Integer> memo = new HashMap<>();
         Grid g = new Grid();
-        System.out.println(g.find(2,3,memo));
+        System.out.println(g.find(17,17,memo));
     }
 }
