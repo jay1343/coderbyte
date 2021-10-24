@@ -8,20 +8,20 @@ import java.util.*;
 
 class Sum
 {
-    boolean find(int n,int[] m)
+    boolean find(int target,int[] arr)
     {
         Set<Integer> memo = new HashSet<>();
 
-        for(Integer num : m)
+        for(Integer num : arr)
         {
             memo.add(num);
         }
-        if(memo.contains(n) || n==0) return true;
-        if(n<0) return false;
+        if(memo.contains(target) || target==0) return true;
+        if(target<0) return false;
 
         for(Integer num : memo)
         {
-            if(find(n-num , m) == true) return true;
+            if(find(target-num , arr) == true) return true;
         }
 
         return false;
