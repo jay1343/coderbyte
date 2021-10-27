@@ -4,12 +4,6 @@
 	consider that you can use one value multiple times.
 */
 
-/*
-	given target and an array of integers.
-	by adding integers in array find if we can get target or not.
-	consider that you can use one value multiple times.
-*/
-
 import java.util.*;
 
 class Sum
